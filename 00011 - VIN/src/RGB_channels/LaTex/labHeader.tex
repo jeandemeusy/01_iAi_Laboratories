@@ -1,0 +1,159 @@
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% Template Labo 
+% Pierre BRESSY
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{graphicx} 
+\usepackage{ifthen}
+\usepackage{amssymb}
+\usepackage{chngpage} 
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\ifthenelse{\equal{\Language}{"EN"}}
+{}{\usepackage[francais]{babel}
+}
+\usepackage[toc,page]{appendix}
+\usepackage{ifthen}
+\usepackage{multirow}
+\usepackage{fourier}
+\usepackage{pifont}
+\usepackage{bbding}
+%\usepackage{algorithm} 
+%\usepackage{algorithmic} 
+\usepackage{url} 
+\usepackage{hyperref} 
+\usepackage[linesnumbered,algoruled,boxed]{algorithm2e}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{enumitem}
+\input{macros.tex}
+
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% definition zone listing
+\definecolor{gris}{rgb}{0.95,0.95,0.95}
+\lstset{
+  numbers=none, 
+  tabsize=4, 
+  backgroundcolor=\color{gris},
+  frame=single, 
+  breaklines=true, 
+  showlines=true,
+  keywordstyle=\color{black},
+  stringstyle=\ttfamily,
+  framexleftmargin=6mm, 
+  xleftmargin=6mm,
+  escapechar=@
+}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=trBL,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{  style=customc }
+
+\lstset{% pour les caractères accentués dans le listing
+        inputencoding=utf8,
+        extendedchars=true,
+        literate=%
+        {é}{{\'{e}}}1
+        {è}{{\`{e}}}1
+        {à}{{\`{a}}}1
+        {î}{{\^{i}}}1
+        {ê}{{\^{e}}}1
+}
+
+\newcommand{\lstnormal}{\lstset{numbers=none, tabsize=4, backgroundcolor=\color{gris},frame=single, breaklines=true, showlines=true,keywordstyle=\color{black},stringstyle=\ttfamily,framexleftmargin=6mm, xleftmargin=6mm}}
+
+\newcommand{\lstfondblanc}{\lstset{numbers=none, tabsize=4, backgroundcolor=\color{white},frame=none, breaklines=true, showlines=true, keywordstyle=\color{black},stringstyle=\ttfamily,framexleftmargin=6mm, xleftmargin=6mm} }
+
+
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\setlength{\textheight}{23cm}
+\pagenumbering{arabic} \setcounter{page}{1}
+\fancyhead{}
+\fancyhf{} 
+\lhead{\includegraphics[scale=0.4]{HEIG-VD-seul.png} }
+\ifthenelse{\equal{\Language}{"EN"}}
+{\rhead{\Department \ Department\\\Unit\ - Lab\labNumber\\Year\ \academicYear}}
+{\rhead{Département \Department\\\Unit\ - Lab\labNumber\\Année\ \academicYear}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\lfoot{\myName\ - \myPhone\ - \myEmail}
+\rfoot{page \thepage}
+\changepage{}%amount added to textheight
+           {}%amount added to textwidth
+           {}%amount added to evensidemargin
+           {}%amount added to oddsidemargin
+           {}%amount added to columnsep
+           {-1.5cm}%amount added to topmargin
+          {}%amount added to headheight
+           {2cm}%amount added to headsep
+           {}%amount added to footskip
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\hypersetup{
+ backref=true, %permet d'ajouter des liens dans...
+ pagebackref=true,%...les bibliographies
+ hyperindex=true, %ajoute des liens dans les index.
+ colorlinks=true, %colorise les liens
+ breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+ urlcolor= blue, %couleur des hyperliens
+ linkcolor= blue, %couleur des liens internes
+ bookmarks=true, %créé des signets pour Acrobat
+ bookmarksopen=true, %si les signets Acrobat sont créés,
+ %les afficher complètement.
+ pdftitle={}, %informations apparaissant dans
+ pdfauthor={}, %dans les informations du document
+ pdfsubject={} %sous Acrobat.
+}
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\fancypagestyle{FirstPage}{
+        \fancyhf{}
+        \lhead{\includegraphics[scale=0.4]{HEIG-VD-seul.png} }
+        \ifthenelse{\equal{\Language}{"EN"}}
+        {\rhead{\Department \ Department\\\Unit\ - Lab\labNumber\\Year\ \academicYear}}
+        {\rhead{Département \Department\\\Unit\ - Lab\labNumber\\Année\ \academicYear}}
+        \renewcommand{\headrulewidth}{1pt}
+        \renewcommand{\footrulewidth}{1pt}
+        \lfoot{\myName\ - \myPhone\ - \myEmail}
+        \rfoot{page \thepage}
+        \setlength{\headsep}{1.9cm}
+}
+
+\fancypagestyle{StandardPages}{
+        \fancyhf{}
+        \lhead{\includegraphics[scale=0.4]{HEIG-VD-seul.png} }
+        \ifthenelse{\equal{\Language}{"EN"}}
+        {\rhead{\Department \ Department\\\Unit\ - Lab\labNumber\\Year\ \academicYear}}
+        {\rhead{Département \Department\\\Unit\ - Lab\labNumber\\Année\ \academicYear}}
+        \renewcommand{\headrulewidth}{1pt}
+        \renewcommand{\footrulewidth}{1pt}
+        \lfoot{\myName\ - \myPhone\ - \myEmail}
+        \rfoot{page \thepage}
+        \setlength{\headsep}{0.7cm}
+}
+

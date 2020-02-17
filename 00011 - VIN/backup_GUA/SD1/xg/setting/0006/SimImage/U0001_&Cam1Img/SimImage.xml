@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimulationImageXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <imgFileInfo>
+    <SimImgInfo Order="0">
+      <Name>Chessboard.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="1">
+      <Name>Objet1_1_distorded.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="2">
+      <Name>Objet1_2_distorded.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="3">
+      <Name>Objet1_3_distorded.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="4">
+      <Name>Objet2_1_distorded.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="5">
+      <Name>Objet2_2_distorded.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="6">
+      <Name>Objet2_3_distorded.bmp</Name>
+    </SimImgInfo>
+  </imgFileInfo>
+</SimulationImageXml>

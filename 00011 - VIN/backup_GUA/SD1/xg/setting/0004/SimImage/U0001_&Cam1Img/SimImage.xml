@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimulationImageXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <imgFileInfo>
+    <SimImgInfo Order="0">
+      <Name>181009_182418_0000000001_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="1">
+      <Name>181009_182445_0000000004_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="2">
+      <Name>181009_182600_0000000008_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="3">
+      <Name>181009_182619_0000000009_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="4">
+      <Name>181009_182646_0000000010_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="5">
+      <Name>181009_182657_0000000011_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="6">
+      <Name>181009_182710_0000000012_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="7">
+      <Name>181009_182718_0000000013_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="8">
+      <Name>181009_182734_0000000014_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="9">
+      <Name>181009_182740_0000000015_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="10">
+      <Name>181009_183015_0000000024_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="11">
+      <Name>181009_183051_0000000035_&amp;Cam1Img.bmp</Name>
+    </SimImgInfo>
+  </imgFileInfo>
+</SimulationImageXml>

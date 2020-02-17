@@ -1,0 +1,94 @@
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% Template LAB HEADER 
+% Pierre BRESSY
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{amssymb}
+\usepackage{chngpage} 
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[toc,page]{appendix}
+\usepackage{multirow} 
+\usepackage{fourier}
+\usepackage{pifont}
+\usepackage[linesnumbered,algoruled,boxed]{algorithm2e}
+\usepackage[frenchb]{babel}
+
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% definition zone listing
+\definecolor{gris}{rgb}{0.95,0.95,0.95}
+\lstset{language=C,numbers=none, tabsize=4, backgroundcolor=\color{gris},
+frame=single, breaklines=true, showlines=true,
+keywordstyle=\color{blue},
+stringstyle=\ttfamily,inputencoding=utf8,
+framexleftmargin=4mm, xleftmargin=4mm}
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\input{def_annee.tex}
+
+\input{macros.tex}
+
+\newcommand{\Departement}{Département \DPT}
+\newcommand{\AnneeRef}{Année \AnneeCourante}
+\newcommand{\Moi}{Pierre BRESSY}
+\newcommand{\Tel}{024.557.64.10}
+\newcommand{\AuteurLabo}{\moi / HEIG-VD}
+\newcommand{\Email}{pierre.bressy@heig-vd.ch}
+
+
+\setlength{\textheight}{23cm}
+\pagenumbering{arabic} \setcounter{page}{1}
+
+\fancypagestyle{FirstPage}{
+        \fancyhf{} 
+        \lhead{\includegraphics[scale=0.4]{HEIG-VD-seul.png} }
+        \rhead{\Departement\\\Unite\ - Lab\NumLabo\\\AnneeRef}
+        \renewcommand{\headrulewidth}{1pt}
+        \renewcommand{\footrulewidth}{1pt}
+        \lfoot{\Moi\ - \Tel\ - \Email}
+        \rfoot{page \thepage}
+        \setlength{\headsep}{1.9cm}
+}
+
+\fancypagestyle{StandardPages}{
+        \fancyhf{} 
+        \lhead{\includegraphics[scale=0.4]{HEIG-VD-seul.png} }
+        \rhead{\Departement\\\Unite\ - Lab\NumLabo\\\AnneeRef}
+        \renewcommand{\headrulewidth}{1pt}
+        \renewcommand{\footrulewidth}{1pt}
+        \lfoot{\Moi\ - \Tel\ - \Email}
+        \rfoot{page \thepage}
+}
+
+
+\changepage{2cm}%amount added to textheight
+           {}%amount added to textwidth
+           {}%amount added to evensidemargin
+           {}%amount added to oddsidemargin
+           {}%amount added to columnsep
+           {-1.5cm}%amount added to topmargin
+           {}%amount added to headheight
+           {0.5cm}%amount added to headsep
+           {}%amount added to footskip
+
+ \fancyhead{}
+
+
+
+
+\usepackage{url} 
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}

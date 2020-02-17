@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VAWSPWorkspaceSettingFileBean xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectedControllerAddress>192.168.0.10</ConnectedControllerAddress>
+  <Version>0005.0003.1010</Version>
+  <ControllerType>XG_X2000_TYPE</ControllerType>
+</VAWSPWorkspaceSettingFileBean>

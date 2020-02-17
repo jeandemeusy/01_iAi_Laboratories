@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Partie pratique}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Probl\IeC {\`e}me}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}R\IeC {\'e}sultats attendus}{3}{subsection.1.2}

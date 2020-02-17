@@ -1,0 +1,39 @@
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% TIN/2018-2019/VIN/Canaux RGB et extractions de couleurs
+% Guillaume BANGALA
+% Octobre 2018
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\newcommand{\Language}{"FR"} % EN | FR
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\documentclass[10pt,a4paper]{article}
+\input{labHeader.tex}
+\input{currentYear.tex}
+\input{me.tex}
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\input{lab_infos.tex}
+% -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\begin{document}
+\thispagestyle{FirstPage}
+\hspace{2cm}
+\begin{center}
+\section*{\Unit - LAB\labNumber : \labTitle}
+\small{\textit{Auteur : Guillaume Bangala}}\\
+\small{\textit{Version : \DocVersion}}\\
+\decofourleft \space \decofourleft \space \decofourright \space \decofourright
+\end{center}
+% -----------------------------------------------------------------------------
+\ifthenelse{\equal{\Language}{"EN"}}{\section*{Objectives}}{\section*{Objectifs}}
+\input{Labo\labNumber _objectives.tex}
+% -----------------------------------------------------------------------------
+\tableofcontents
+
+\pagestyle{StandardPages} 
+\newpage
+\input{Labo\labNumber _theoretical_part.tex}
+\newpage
+\input{labo\labNumber _practical_part.tex}
+% -----------------------------------------------------------------------------
+\bibliographystyle{alpha}
+\bibliography{../Bibliography/references}
+% -----------------------------------------------------------------------------
+\end{document}

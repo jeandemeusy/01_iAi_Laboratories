@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Partie pratique}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Contexte}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}But}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Mat\IeC {\'e}riel \IeC {\`a} disposition}{2}{subsection.1.3}

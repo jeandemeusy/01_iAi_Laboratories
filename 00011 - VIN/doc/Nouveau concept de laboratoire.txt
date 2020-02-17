@@ -1,0 +1,254 @@
+A faire pour le cours de VIN :
+
+MàS des différents points
+
+Liste des laboratoires
+ - Import/Export d'un programme + réglage d'une prise de vue
+    Faire un tour du matériel ainsi que des différents programmes qui seront utilisés durant les laboratoires au travers d'un laboratoire guidé. Pour cela, un programme template sera fourni aux étudiants afin qu'ils puissent tester l'upload/download de programme dans KEYENCE, comment interagir avec le contrôleur et faire les réglages de l'unité de capture.
+    Introduit :
+        o le contrôleur KEYENCE et le setup optique
+        o le programme KEYENCE VisionTerminal
+            - son utilité
+            - les différentes fenêtres du programmes
+            - comment se connecter à un contrôleur
+            - comment enregistrer/charger des configurations
+        o le programme KEYENCE VisionEditor
+            - son utilité
+            - les différents onglets
+                - File : présenter les diverses fenêtres
+                - Program Setting : présenter les diverses fenêtres
+                - Operation Screen Setting & User Layout : expliquer brièvement leur utilité, mais ne pas s'étendre.
+    Déroulement : 
+        o Discussion : introduction du laboratoire et description de l'environnement
+        o Guidé : 
+            - installation (finalisation de l'installation des différents programmes)
+            - découverte des différents programmes et de leur utilité
+            - connexion du contrôleur aux programmes et upload du programme template
+        o Discussion : présentation de différents objets à capturer et de quels points mettre en valeur.
+        o Guidé : Un premier réglage pour un objet pour montrer les différents points de paramètres du contrôleur et du système optique pour faire une bonne prise de vue.
+        o Libre : Réglage du système par les étudiants pour observer les différents objets mis à leur disposition.
+    Durée : 2h
+    Pré-requis :
+        o Fonctionnement de la prise d'image (temps d'ouverture/diaphragme/focale/sensibilité/etc)
+    Matériel :
+        o programme KEYENCE template qui contient 2-3 fonctions et une UI basiques, mais un bloc capture vierge.
+            
+            
+ - Calibration de la caméra et mesure de longueurs/aires :
+    Calibrer le système pour corriger la déformation induite par l'optique du système et faire des mesures visuelles à l'échelle et exemptes de déformation.
+    Introduit :
+        o Travail en Simulation uniquement (et pas sur le contrôleur)
+        o Image de référence/capture
+        o Utilisation des outils longueurs/aire
+            - Notion de Scaling
+            - Paramétrage des blocs fontionnels génériques
+            - Utilisation des ROI dans les blocs fonctionnels
+            - Observation des résultats dans les blocs fonctionnels
+    Déroulement :
+        o Discussion : Introduction du laboratoire
+        o Guidé : 
+            - processus de calibration du système
+            - mesure d'un des objets avec une image dont la déformation est corrigée
+        o Libre : mesure de tous les objets sur toutes les images
+    Durée : 2h
+    Pré-requis :
+        o (-)
+    Matériel :
+        o les images déformées
+        
+        
+ - Canaux RGB :
+    Extraire les composantes RGB d'une image. Grâce aux opérations sur les images, extraire les composantes jaune isolée et noire isolée.
+    Utiliser l'outil built-in d'extraction des couleurs pour effectuer la même chose : facile et rapide !
+    Une fois les différents cas terminés, implémenter les blocs d'extraction de couleur ainsi que la structure de contrôle dans le programme fourni pour finir par le faire tourner en temps réel sur le contrôleur.
+    Introduit :
+        o Opérations sur les images et manipulation des variables images
+        o Programmation via FlowChart
+            - ajout/suppression de blocs
+            - variables
+            - utilisation des structures de contrôle (branch)
+    Déroulement : laboratoire semi-guidé :
+        Séance 1:
+        o Discussion : 
+            - Introduction du labo
+            - présentation du CdC
+            - discussion sur les cannaux RGB
+        o Guidé : 
+            - théorie sur les canaux RGB
+            - introduction aux opérations sur les images
+        o Discussion :
+            - réflexion en groupe sur comment faire pour extraire le Rouge uniquement (par exemple)
+        o Libre :
+            - mise en place de la méthode décrite précédemment et implémentation de tous les cas
+        
+        Séance 2:
+        o Discussion :
+            - retour sur ce que les étudiants on fait la dernière fois = contrôle que les étudiants ont tous quelque chose qui fonctionne.
+            - explication de l'objectif de la suite du labo
+            - présentation des outils de contrôle du flowchart (branch/loop) et de comment les contrôler
+        o Libre :
+            - implémentation de la partie contrôle de l'application et test de validation avec le setup complet
+    Durée : 4h (2x 2h)
+    Pré-requis :
+        o Théorie RGB
+    Matériel :
+        o programme KEYENCE : squelette contenant l'UI et les variables de bases à utiliser
+
+
+ - Détection de foret :
+    Détecter sur l'image la présence et le type des forets dentaires. L'image affichera 3 types de forets :
+        o Type 1 : avec un manche en plastique de différentes couleurs et l'épaisseur écrite contre la partie plastique.
+        o Type 2 : avec un manche en métal et un anneau en plastique coloré (de différentes couleurs).
+        o Type 3 : avec 2 types de foret : fin ou épais.
+    Le but est de développer un programme qui détecte le type de foret, et les informations qui permettent de discriminer OK/NOK, telles que la couleurs des divers éléments, la présence de pastille en silicone, l'épaisseur et la longueur des forets.
+    Introduit :
+        o Outils KEYENCE de détection d'objets sur l'image blob et shapetrax/pattern Match
+        o Outil de position adjustment et ses variantes pour les ROI
+        o Enregistrement des images de simulation depuis le contrôleur
+        o Affichage simple des résultats à l'écran
+    Déroulement :
+        Séance 1:
+        o Discussion :
+            - Introduction du laboratoire
+            - contraintes posées par le CdC
+        o Libre : 
+            - Réglage des setups des étudiants pour une capture optimale
+        o Discussion : 
+            - retour sur les tactiques de prises de vues et présentation d'une solution
+        o Libre :
+            - Prise des images de simulation
+        o Guidé : 
+            - Démonstration de blob pour détecter des objets
+            - Démonstration de ShapeTrax pour détecter le type de foret + image de référence
+        o Libre : 
+            - Mise en pratique des blocs Blob/ShapeTrax pour détecter les 3 types de forets
+        o Discussion : 
+            - retour sur les stratégies (être sûr que ça marche chez tout le monde)
+            - réflexion sur comment aborder le problème pour optimiser la détection de 3 types de forets sur une image qui contient plusieurs forets de type différents (utilisation de blob + boucles + branch).
+        o Libre :
+            - réorganisation du code et test pour que ça marche.
+        
+        Séance 2 :
+        o Guidé : 
+            - Démonstration de l'importance de Position Adjust : création d'un outil de mesure d'épaisseur de foret (par exemple) sur un type de foret (Type 3), mais sur les prises d'images différentes (pas sur l'image de référence), la ROI ne suit pas.
+            - Démonstration de Position Adjustment pour faire suivre les ROIs .
+            - Démonstration de comment utiliser des variables pour paramétrer les blocs.
+            - Affichage de résultats simples à l'écran (forets qui a la bonne couleur).
+        o Libre : 
+            - Création de tous les blocs de contrôle pour remplir le CdC
+            - Création des variables de contrôles nécessaires pour les blocs.
+    Durée : 4h (en classe) + 4h à la maison
+    Pré-requis :
+        o Prise de vue
+        o Manipulation des variables
+        o Programmation en FlowChart
+    Matériel :
+        o Les forets Dentsply Maillefer
+
+
+ - Détection des forets dentaires (UI):
+    Reprendre le programme utilisé pour le labo sur les forets dentaire et créer une UI fonctionnelle dessus pour le contrôle des éléments à contrôler, ainsi qu'un affichage temps réel des forets valides et non-valides.
+    Introduit :
+        o Les éléments pour créer une UI
+        o Utilisation des commandes système
+    Déroulement :
+        o Discussion : 
+            - Démonstration du résultat attendu et discussion du CdC
+            - Explication du fonctionnement d'une UI classique et des contraintes que cela pose
+        o Guidé :
+            - Présentation de la fenêtre de customisation d'UI
+            - Création de menu ainsi que leur paramétrage et le paramétrage des éléments
+                o les boutons
+                o les drop-down list
+            - Utilisation des commandes
+        o Autonome : 
+            - remise en forme du code FlowChart et de l'UI + test
+    ATTENTION : les étudiants doivent faire une copie de leur labo "Foret" (pour conserver une copie de l'original)
+    Durée : 2h labo + 2h maison
+    Pré-requis :
+        o Pattern match
+        o Sélection de couleur
+        o mesure des longueurs
+    Matériel :
+        o Forets Maillefer-Dentsply
+       
+       
+ - Contrôle de l'étiquette d'une carte à PCB :
+    Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte à PCB.
+    Introduit :
+        o Utilisation des blocs OCR et ajouts de nouveaux caractères
+        o Utilisation des blocs CodeBarre 1D/2D
+        o Manipulation des données "strings" sur contrôleur KEYENCE
+    Déroulement :
+        o Discussion:
+            - introduction
+            - Réflexion sur le CdC et ses contraintes
+        o Guidé :
+            - Présentation des blocs CodeBarre 1D/2D Attention aux conditions minimales pour un "auto-tuning" fonctionnel.
+            - Présentation des blocs OCR et de comment est stockée l'information ensuite
+        o Libre :
+            - Implémentation du squelette du programme (position adjustment, etc...)
+            - Implémentation des différents blocs de contrôle
+            - Implémentation du display
+            - Test de validation avec le setup complet et les différents PCB
+    Durée : 2h
+    Pré-requis :
+        o Pattern match + position adjustment
+        o On-Screen display
+    Matériel :
+
+
+ - Labo - Détection de défaut sur les cartes à PCB
+    Détection des défauts présents sur une carte à PCB : éléments manquants/fissures/déformation.
+    Introduit :
+        o utilisation des différents blocs/image enhance pour la détection de défauts
+        o détection de défaut via soustraction des images
+        o utilisation d'un masque sur une image pour définir des ROI
+        o création d'UI pour le Run Mode pour modifier le type de défaut recherché
+    Déroulement :
+        o Discussion :
+            - Intro
+            - Réflexion sur le CdC
+            - Réflexion sur la manière de trouver des défauts sur un objet
+        o Guidé :
+            - Présentation des outils d'image enhance pour la soustraction et pour la mise en évidence des défauts
+        o Libre :
+            - Implémentation des outils de contrôle
+            - Implémentation de l'UI
+    Durée : 2h
+    Pré-requis :
+        -
+    Matériel :
+        - Images de plus grandes résolutions générées avec PhotoShop
+        
+
+ - Labo-Test - Détection de marques rouges/bleues [4h] :
+    Détection de la présence de marques rouges aux quatres coins des plaques à PCB.
+    Nécessite :
+        o Introduction
+        o Détection d'objets : blobs/pattern match/ShapeTrax.
+        o Position Adjustment et comment le paramétrer
+        o Notion des valeurs de jugement (GO/NOK) du contrôleur et comment les activer dans les blocs fonctionnels.
+        o Isolation/Extraction des couleurs (introduit dans le labo "Canaux RGB")
+    Matériel :
+        o Carte à PCB avec des marques rouges.
+    Points à tester :
+        o les zones d'intérêts mobiles : prouve que le position adjust fonctionnel
+        o montre une erreur si on met une image complètement rouge comme entrée : si cela ne fait pas d'erreur, c'est que le shapetrax a échoué, mais que la suite n'a pas été effectuée (absence de branch pour gérer le programme)
+
+ 
+ - Laboratoire :
+    Résumé
+    Introduit :
+    Déroulement :
+    Durée :
+    Pré-requis :
+    Matériel :
+    
+    
+TODO :
+    o trouver où intégrer les notions
+        - image enhance
+    o investiguer 
+        - les RECIPE
+        - la compilation C

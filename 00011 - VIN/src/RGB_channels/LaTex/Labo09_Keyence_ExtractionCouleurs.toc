@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Partie th\IeC {\'e}orique -- Exercices}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Isoler le canal rouge}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Extraire la couleur rouge}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Extraire la couleur jaune}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Extraire la couleur orange}{4}{subsection.1.4}
+\contentsline {section}{\numberline {2}Partie pratique}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Contexte}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}R\IeC {\'e}sultats attendus}{6}{subsection.2.2}

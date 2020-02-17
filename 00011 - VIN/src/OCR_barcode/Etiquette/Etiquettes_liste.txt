@@ -1,0 +1,61 @@
+Etiquette : 
+
+Dimension : 
+ - générale :
+   L = 47mm (hauteur étiquette)
+   H = 23mm
+ - Config :
+   L = 14mm
+   H = 7mm
+
+Informations :
+1.
+P Id : 890424901113
+N Ser : MS3.1-43275-011
+Config : A
+Error : -
+
+2.
+P Id : 890424901113
+N Ser : MS3.1-43275-012
+Config : C
+Error : -
+
+3.
+P Id : 890424901113
+N Ser : MS3.1-43275-025
+Config : X
+Error : Wrong P Id : 890424891113
+
+4.
+P Id : 890424901113
+N Ser : MS3.1-43275-026
+Config : B
+Error : Wrong N.Ser 027
+
+5.
+P Id : 890424901113
+N Ser : MS3.1-43275-046
+Config : A
+Error : -
+
+
+6.
+P Id : 890424901113
+N Ser : MS3.1-43275-072
+Config : B
+Error : wrong Config -> A
+
+
+7.
+P Id : 890424901113
+N Ser : MS3.1-43275-096
+Config : A
+Error : -
+
+
+8.
+P Id : 890424901113
+N Ser : MS3.1-43275-101
+Config : A
+Error : -

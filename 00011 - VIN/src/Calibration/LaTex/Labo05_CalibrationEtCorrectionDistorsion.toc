@@ -1,0 +1,16 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Partie th\IeC {\'e}orique : Programmation sur KEYENCE - principes de base}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Les variables}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Cat\IeC {\'e}gories et types de variables}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Les noms de variables}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}D\IeC {\'e}clarer une variable}{3}{subsubsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.4}Acc\IeC {\'e}der \IeC {\`a}/allouer une variable}{4}{subsubsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.5}Astuce -- l'outil d'auto-compl\IeC {\'e}tion}{4}{subsubsection.1.1.5}
+\contentsline {subsection}{\numberline {1.2}Les fonctions}{4}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Param\IeC {\'e}trer le bloc}{5}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Acc\IeC {\'e}der aux r\IeC {\'e}sultats du bloc}{6}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}L'utilisation des images par le contr\IeC {\^o}leur XG}{7}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Images de simulation}{8}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Images de r\IeC {\'e}f\IeC {\'e}rence}{8}{subsubsection.1.3.2}
+\contentsline {section}{\numberline {2}Partie pratique \IeC {\textendash } cr\IeC {\'e}ation d\IeC {\textquoteright }un programme KEYENCE}{11}{section.2}
+\contentsline {subsection}{\numberline {2.1}R\IeC {\'e}sultats observ\IeC {\'e}s}{12}{subsection.2.1}

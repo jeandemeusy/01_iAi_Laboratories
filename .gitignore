@@ -1,0 +1,17 @@
+# Folders
+00011 - VIN/version/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Jupiter lab files
+*.ipynb
+
+# Files
+
+# Package
