@@ -1,5 +1,6 @@
 # Folders
 00011 - VIN/software
+**/__pycache__/
 
 # Compiled source
 *.com
