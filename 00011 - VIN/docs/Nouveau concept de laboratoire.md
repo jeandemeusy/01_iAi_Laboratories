@@ -17,14 +17,18 @@ Faire un tour du matériel ainsi que des différents programmes qui seront utili
             - Program Setting : présenter les diverses fenêtres
             - Operation Screen Setting & User Layout : expliquer brièvement leur utilité, mais ne pas s'étendre.
 - Déroulement : 
-    - Discussion : introduction du laboratoire et description de l'environnement
+    - Discussion : 
+        - introduction du laboratoire et description de l'environnement
     - Guidé : 
         - installation (finalisation de l'installation des différents programmes)
         - découverte des différents programmes et de leur utilité
         - connexion du contrôleur aux programmes et upload du programme template
-     - Discussion : présentation de différents objets à capturer et de quels points mettre en valeur.
-     - Guidé : Un premier réglage pour un objet pour montrer les différents points de paramètres du contrôleur et du système optique pour faire une bonne prise de vue.
-     - Libre : Réglage du système par les étudiants pour observer les différents objets mis à leur disposition.
+     - Discussion : 
+         - présentation de différents objets à capturer et de quels points mettre en valeur.
+     - Guidé :
+        - Un premier réglage pour un objet pour montrer les différents points de paramètres du contrôleur et du système optique pour faire une bonne prise de vue.
+     - Libre : 
+        - Réglage du système par les étudiants pour observer les différents objets mis à leur disposition.
 - Durée : 2h
 - Pré-requis :
     - Fonctionnement de la prise d'image (temps d'ouverture/diaphragme/focale/sensibilité/etc)
@@ -65,76 +69,75 @@ Une fois les différents cas terminés, implémenter les blocs d'extraction de c
         - ajout/suppression de blocs
         - variables
         - utilisation des structures de contrôle (branch)
-- Déroulement : laboratoire semi-guidé :
-    - Séance 1:
-        - Discussion : 
-            - Introduction du labo
-            - présentation du CdC
-            - discussion sur les cannaux RGB
-        - Guidé : 
-            - théorie sur les canaux RGB
-            - introduction aux opérations sur les images
-        - Discussion :
-            - réflexion en groupe sur comment faire pour extraire le Rouge uniquement (par exemple)
-        - Libre :
-            - mise en place de la méthode décrite précédemment et implémentation de tous les cas
+- Déroulement : Séance 1 : 
+    - Discussion : 
+        - Introduction du labo
+        - présentation du CdC
+        - discussion sur les cannaux RGB
+    - Guidé : 
+        - théorie sur les canaux RGB
+        - introduction aux opérations sur les images
+    - Discussion :
+        - réflexion en groupe sur comment faire pour extraire le Rouge uniquement (par exemple)
+    - Libre :
+        - mise en place de la méthode décrite précédemment et implémentation de tous les cas
 
-    -Séance 2:
-        - Discussion :
-            - retour sur ce que les étudiants on fait la dernière fois = contrôle que les étudiants ont tous quelque chose qui fonctionne.
-            - explication de l'objectif de la suite du labo
-            - présentation des outils de contrôle du flowchart (branch/loop) et de comment les contrôler
-        - Libre :
-            - implémentation de la partie contrôle de l'application et test de validation avec le setup complet
+- Déroulement : Séance 2 : 
+    - Discussion :
+        - retour sur ce que les étudiants on fait la dernière fois = contrôle que les étudiants ont tous quelque chose qui fonctionne.
+        - explication de l'objectif de la suite du labo
+        - présentation des outils de contrôle du flowchart (branch/loop) et de comment les contrôler
+    - Libre :
+        - implémentation de la partie contrôle de l'application et test de validation avec le setup complet
 - Durée : 4h (2x 2h)
 - Pré-requis :
     - Théorie RGB
 - Matériel :
-    o programme KEYENCE : squelette contenant l'UI et les variables de bases à utiliser
+    - programme KEYENCE : squelette contenant l'UI et les variables de bases à utiliser
 
 
 ### Détection de forets
 Détecter sur l'image la présence et le type des forets dentaires. L'image affichera 3 types de forets :
-    - Type 1 : avec un manche en plastique de différentes couleurs et l'épaisseur écrite contre la partie plastique.
-    - Type 2 : avec un manche en métal et un anneau en plastique coloré (de différentes couleurs).
-    - Type 3 : avec 2 types de foret : fin ou épais.
+- Type 1 : avec un manche en plastique de différentes couleurs et l'épaisseur écrite contre la partie plastique.
+- Type 2 : avec un manche en métal et un anneau en plastique coloré (de différentes couleurs).
+- Type 3 : avec 2 types de foret : fin ou épais.
+
 Le but est de développer un programme qui détecte le type de foret, et les informations qui permettent de discriminer OK/NOK, telles que la couleurs des divers éléments, la présence de pastille en silicone, l'épaisseur et la longueur des forets.
 - Introduit :
     - Outils KEYENCE de détection d'objets sur l'image blob et shapetrax/pattern Match
     - Outil de position adjustment et ses variantes pour les ROI
     - Enregistrement des images de simulation depuis le contrôleur
     - Affichage simple des résultats à l'écran
-- Déroulement :
-    - Séance 1:
-        - Discussion :
-            - Introduction du laboratoire
-            - contraintes posées par le CdC
-        - Libre : 
-            - Réglage des setups des étudiants pour une capture optimale
-        - Discussion : 
-            - retour sur les tactiques de prises de vues et présentation d'une solution
-        - Libre :
-            - Prise des images de simulation
-        - Guidé : 
-            - Démonstration de blob pour détecter des objets
-            - Démonstration de ShapeTrax pour détecter le type de foret + image de référence
-        - Libre : 
-            - Mise en pratique des blocs Blob/ShapeTrax pour détecter les 3 types de forets
-        - Discussion : 
-            - retour sur les stratégies (être sûr que ça marche chez tout le monde)
-            - réflexion sur comment aborder le problème pour optimiser la détection de 3 types de forets sur une image qui contient plusieurs forets de type différents (utilisation de blob + boucles + branch).
-        - Libre :
-            - réorganisation du code et test pour que ça marche.
+- Déroulement : Séance 1 :
+    - Discussion :
+        - Introduction du laboratoire
+        - contraintes posées par le CdC
+    - Libre : 
+        - Réglage des setups des étudiants pour une capture optimale
+    - Discussion : 
+        - retour sur les tactiques de prises de vues et présentation d'une solution
+    - Libre :
+        - Prise des images de simulation
+    - Guidé : 
+        - Démonstration de blob pour détecter des objets
+        - Démonstration de ShapeTrax pour détecter le type de foret + image de référence
+    - Libre : 
+        - Mise en pratique des blocs Blob/ShapeTrax pour détecter les 3 types de forets
+    - Discussion : 
+        - retour sur les stratégies (être sûr que ça marche chez tout le monde)
+        - réflexion sur comment aborder le problème pour optimiser la détection de 3 types de forets sur une image qui contient plusieurs forets de type différents (utilisation de blob + boucles + branch).
+    - Libre :
+        - réorganisation du code et test pour que ça marche.
 
-    Séance 2 :
-        - Guidé : 
-            - Démonstration de l'importance de Position Adjust : création d'un outil de mesure d'épaisseur de foret (par exemple) sur un type de foret (Type 3), mais sur les prises d'images différentes (pas sur l'image de référence), la ROI ne suit pas.
-            - Démonstration de Position Adjustment pour faire suivre les ROIs .
-            - Démonstration de comment utiliser des variables pour paramétrer les blocs.
-            - Affichage de résultats simples à l'écran (forets qui a la bonne couleur).
-        - Libre : 
-            - Création de tous les blocs de contrôle pour remplir le CdC
-            - Création des variables de contrôles nécessaires pour les blocs.
+- Déroulement : Séance 2 :
+    - Guidé : 
+        - Démonstration de l'importance de Position Adjust : création d'un outil de mesure d'épaisseur de foret (par exemple) sur un type de foret (Type 3), mais sur les prises d'images différentes (pas sur l'image de référence), la ROI ne suit pas.
+        - Démonstration de Position Adjustment pour faire suivre les ROIs .
+        - Démonstration de comment utiliser des variables pour paramétrer les blocs.
+        - Affichage de résultats simples à l'écran (forets qui a la bonne couleur).
+    - Libre : 
+        - Création de tous les blocs de contrôle pour remplir le CdC
+        - Création des variables de contrôles nécessaires pour les blocs.
 - Durée : 4h (en classe) + 4h à la maison
 - Pré-requis :
     - Prise de vue
@@ -218,10 +221,10 @@ Détection des défauts présents sur une carte à PCB : éléments manquants/fi
 - Pré-requis :
     - (-)
 - Matériel :
-    - Images de plus grandes résolutions générées avec PhotoShop
+    - Images de plus grandes résolutions générées avec Photoshop
         
 
-### Labo-Test - Détection de marques rouges/bleues [4h] :
+### Labo-Test - Détection de marques rouges/bleues :
 Détection de la présence de marques rouges aux quatres coins des plaques à PCB.
 - Pré-requis :
     - Introduction
@@ -231,8 +234,7 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
     - Isolation/Extraction des couleurs (introduit dans le labo "Canaux RGB")
 - Matériel :
     - Carte à PCB avec des marques rouges.
-- Durée :
-    - 4h
+- Durée : 4h
 - Points à tester :
     - les zones d'intérêts mobiles : prouve que le position adjust fonctionnel
     - montre une erreur si on met une image complètement rouge comme entrée : si cela ne fait pas d'erreur, c'est que le shapetrax a échoué, mais que la suite n'a pas été effectuée (absence de branch pour gérer le programme)
