@@ -1,4 +1,4 @@
-c# Nouveaux concepts
+# Nouveaux concepts
 
 ## Table des matières
 - [Liste des laboratoires](#liste-des-laboratoires)
