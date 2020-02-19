@@ -178,11 +178,11 @@ Reprendre le programme utilisé pour le labo sur les forets dentaire et créer u
     - Guidé :
         - Présentation de la fenêtre de customisation d'UI
         - Création de menu ainsi que leur paramétrage et le paramétrage des éléments
-            - les boutons
-            - les drop-down list
+            - Les boutons
+            - Les drop-down list
         - Utilisation des commandes
     - Autonome : 
-        - remise en forme du code FlowChart et de l'UI + test
+        - Remise en forme du code FlowChart et de l'UI + test
 - Durée : 2h labo + 2h maison
 - Pré-requis :
     - Pattern match
@@ -201,7 +201,7 @@ Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte �
     - Manipulation des données "strings" sur contrôleur KEYENCE
 - Déroulement :
     - Discussion:
-        - introduction
+        - Introduction
         - Réflexion sur le CdC et ses contraintes
     - Guidé :
         - Présentation des blocs CodeBarre 1D/2D Attention aux conditions minimales pour un "auto-tuning" fonctionnel.
@@ -222,10 +222,10 @@ Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte �
 ### Contrôle des défauts sur PCB
 Détection des défauts présents sur une carte à PCB : éléments manquants/fissures/déformation.
 - Introduit :
-    - utilisation des différents blocs/image enhance pour la détection de défauts
-    - détection de défaut via soustraction des images
-    - utilisation d'un masque sur une image pour définir des ROI
-    - création d'UI pour le Run Mode pour modifier le type de défaut recherché
+    - Utilisation des différents blocs/image enhance pour la détection de défauts
+    - Détection de défaut via soustraction des images
+    - Utilisation d'un masque sur une image pour définir des ROI
+    - Création d'UI pour le Run Mode pour modifier le type de défaut recherché
 - Déroulement :
     - Discussion :
         - Intro
@@ -256,8 +256,8 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
     - Carte à PCB avec des marques rouges.
 - Durée : 4h
 - Points à tester :
-    - les zones d'intérêts mobiles : prouve que le position adjust fonctionnel
-    - montre une erreur si on met une image complètement rouge comme entrée : si cela ne fait pas d'erreur, c'est que le shapetrax a échoué, mais que la suite n'a pas été effectuée (absence de branch pour gérer le programme)
+    - Les zones d'intérêts mobiles : prouve que le position adjust fonctionnel
+    - Montre une erreur si on met une image complètement rouge comme entrée : si cela ne fait pas d'erreur, c'est que le shapetrax a échoué, mais que la suite n'a pas été effectuée (absence de branch pour gérer le programme)
 
 ***
 
@@ -273,9 +273,9 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
 ***
 
 ## Todo
-- trouver où intégrer les notions
-    - image enhance
-    - investiguer 
-        - les RECIPE
-        - la compilation C
+- Trouver où intégrer les notions
+    - Image enhance
+    - Investiguer 
+        - Les RECIPE
+        - La compilation C
 - Marche à suivre des différents points
