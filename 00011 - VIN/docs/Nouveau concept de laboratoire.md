@@ -1,4 +1,4 @@
-# Nouveaux concepts
+c# Nouveaux concepts
 
 ## Table des matières
 - [Liste des laboratoires](#liste-des-laboratoires)
@@ -56,7 +56,7 @@ Calibrer le système pour corriger la déformation induite par l'optique du syst
     - Travail en Simulation uniquement (et pas sur le contrôleur)
     - Image de référence/capture
     - Utilisation des outils longueurs/aire
-        - Notion de Scaling
+        - Notion de scaling
         - Paramétrage des blocs fontionnels génériques
         - Utilisation des ROI dans les blocs fonctionnels
         - Observation des résultats dans les blocs fonctionnels
