@@ -5,11 +5,11 @@
   * [Interaction avec le controleur et prise de vue](#interaction-avec-le-controleur-et-prise-de-vue)
   * [Calibration et mesures](#calibration-et-mesures)
   * [Canaux RGB](#canaux-rgb)
-  * [Detection de forets](#detection-de-forets)
-  * [Detection des forets - UI](#detection-des-forets---ui)
-  * [Controle de marques sur PCB](#controle-de-marques-sur-pcb)
-  * [Controle des defauts sur PCB](#controle-des-defauts-sur-pcb)
-  * [Labo-Test - Controle de marques rouges et bleues](#labo-test---controle-de-marques-rouges-et-bleues)
+  * [Détection de forets](#détection-de-forets)
+  * [Détection des forets - UI](#détection-des-forets---ui)
+  * [Contrôle de marques sur PCB](#contrôle-de-marques-sur-pcb)
+  * [Contrôle des défauts sur PCB](#contrôle-des-défauts-sur-pcb)
+  * [Labo-Test - Contrôle de marques rouges et bleues](#labo-test---contrôle-de-marques-rouges-et-bleues)
 - [Template](#template)
 - [Todo](#todo)
 
@@ -47,7 +47,8 @@ Faire un tour du matériel ainsi que des différents programmes qui seront utili
     - Fonctionnement de la prise d'image (temps d'ouverture/diaphragme/focale/sensibilité/etc)
 - Matériel :
     - programme KEYENCE template qui contient 2-3 fonctions et une UI basiques, mais un bloc capture vierge.
-            
+
+***
             
 ### Calibration et mesures
 Calibrer le système pour corriger la déformation induite par l'optique du système et faire des mesures visuelles à l'échelle et exemptes de déformation
@@ -71,7 +72,8 @@ Calibrer le système pour corriger la déformation induite par l'optique du syst
 - Matériel :
     - les images déformées
         
-        
+***
+
 ### Canaux RGB
 Extraire les composantes RGB d'une image. Grâce aux opérations sur les images, extraire les composantes jaune isolée et noire isolée.
 Utiliser l'outil built-in d'extraction des couleurs pour effectuer la même chose : facile et rapide !
@@ -108,8 +110,9 @@ Une fois les différents cas terminés, implémenter les blocs d'extraction de c
 - Matériel :
     - programme KEYENCE : squelette contenant l'UI et les variables de bases à utiliser
 
+***
 
-### Detection de forets
+### Détection de forets
 Détecter sur l'image la présence et le type des forets dentaires. L'image affichera 3 types de forets :
 - Type 1 : avec un manche en plastique de différentes couleurs et l'épaisseur écrite contre la partie plastique.
 - Type 2 : avec un manche en métal et un anneau en plastique coloré (de différentes couleurs).
@@ -159,8 +162,9 @@ Le but est de développer un programme qui détecte le type de foret, et les inf
 - Matériel :
     - Les forets Dentsply Maillefer
 
+***
 
-### Detection des forets - UI
+### Détection des forets - UI
 Reprendre le programme utilisé pour le labo sur les forets dentaire et créer une UI fonctionnelle dessus pour le contrôle des éléments à contrôler, ainsi qu'un affichage temps réel des forets valides et non-valides.
 
 :warning: les étudiants doivent faire une copie de leur labo "Foret" (pour conserver une copie de l'original)
@@ -187,8 +191,9 @@ Reprendre le programme utilisé pour le labo sur les forets dentaire et créer u
 - Matériel :
     - Forets Maillefer-Dentsply
        
-       
-### Controle de marques sur PCB
+***
+      
+### Contrôle de marques sur PCB
 Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte à PCB.
 - Introduit :
     - Utilisation des blocs OCR et ajouts de nouveaux caractères
@@ -212,8 +217,9 @@ Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte �
     - On-Screen display
 - Matériel :
 
+***
 
-### Controle des defauts sur PCB
+### Contrôle des défauts sur PCB
 Détection des défauts présents sur une carte à PCB : éléments manquants/fissures/déformation.
 - Introduit :
     - utilisation des différents blocs/image enhance pour la détection de défauts
@@ -236,8 +242,9 @@ Détection des défauts présents sur une carte à PCB : éléments manquants/fi
 - Matériel :
     - Images de plus grandes résolutions générées avec Photoshop
         
+***
 
-### Labo-Test - Controle de marques rouges et bleues
+### Labo-Test - Contrôle de marques rouges et bleues
 Détection de la présence de marques rouges aux quatres coins des plaques à PCB.
 - Pré-requis :
     - Introduction
@@ -252,8 +259,9 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
     - les zones d'intérêts mobiles : prouve que le position adjust fonctionnel
     - montre une erreur si on met une image complètement rouge comme entrée : si cela ne fait pas d'erreur, c'est que le shapetrax a échoué, mais que la suite n'a pas été effectuée (absence de branch pour gérer le programme)
 
- 
- ## Template
+***
+
+## Template
 - Laboratoire :
 - Résumé
 - Introduit :
@@ -262,7 +270,8 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
 - Pré-requis :
 - Matériel :
     
-    
+***
+
 ## Todo
 - trouver où intégrer les notions
     - image enhance
