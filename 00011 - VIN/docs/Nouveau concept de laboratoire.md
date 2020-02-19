@@ -1,7 +1,20 @@
 # Nouveaux concepts
 
+## Table des matières
+- [Liste des laboratoires](#liste-des-laboratoires)
+  * [Interaction avec le controleur et prise de vue](#interaction-avec-le-controleur-et-prise-de-vue)
+  * [Calibration et mesures](#calibration-et-mesures)
+  * [Canaux RGB](#canaux-rgb)
+  * [Detection de forets](#detection-de-forets)
+  * [Detection des forets - UI](#detection-des-forets---ui)
+  * [Controle de marques sur PCB](#controle-de-marques-sur-pcb)
+  * [Controle des defauts sur PCB](#controle-des-defauts-sur-pcb)
+  * [Labo-Test - Controle de marques rouges et bleues](#labo-test---controle-de-marques-rouges-et-bleues)
+- [Template](#template)
+- [Todo](#todo)
+
 ## Liste des laboratoires
-### Import/Export d'un programme et réglage d'une prise de vue
+### Interaction avec le controleur et prise de vue
 Faire un tour du matériel ainsi que des différents programmes qui seront utilisés durant les laboratoires au travers d'un laboratoire guidé. Pour cela, un programme template sera fourni aux étudiants afin qu'ils puissent tester l'upload/download de programme dans KEYENCE, comment interagir avec le contrôleur et faire les réglages de l'unité de capture.
 - Introduit :
     - le contrôleur KEYENCE et le setup optique
@@ -36,7 +49,7 @@ Faire un tour du matériel ainsi que des différents programmes qui seront utili
     - programme KEYENCE template qui contient 2-3 fonctions et une UI basiques, mais un bloc capture vierge.
             
             
-### Calibration de la caméra et mesure de longueurs/aires
+### Calibration et mesures
 Calibrer le système pour corriger la déformation induite par l'optique du système et faire des mesures visuelles à l'échelle et exemptes de déformation
 - Introduit :
     - Travail en Simulation uniquement (et pas sur le contrôleur)
@@ -96,7 +109,7 @@ Une fois les différents cas terminés, implémenter les blocs d'extraction de c
     - programme KEYENCE : squelette contenant l'UI et les variables de bases à utiliser
 
 
-### Détection de forets
+### Detection de forets
 Détecter sur l'image la présence et le type des forets dentaires. L'image affichera 3 types de forets :
 - Type 1 : avec un manche en plastique de différentes couleurs et l'épaisseur écrite contre la partie plastique.
 - Type 2 : avec un manche en métal et un anneau en plastique coloré (de différentes couleurs).
@@ -147,7 +160,7 @@ Le but est de développer un programme qui détecte le type de foret, et les inf
     - Les forets Dentsply Maillefer
 
 
-### Détection des forets (UI)
+### Detection des forets - UI
 Reprendre le programme utilisé pour le labo sur les forets dentaire et créer une UI fonctionnelle dessus pour le contrôle des éléments à contrôler, ainsi qu'un affichage temps réel des forets valides et non-valides.
 
 :warning: les étudiants doivent faire une copie de leur labo "Foret" (pour conserver une copie de l'original)
@@ -175,7 +188,7 @@ Reprendre le programme utilisé pour le labo sur les forets dentaire et créer u
     - Forets Maillefer-Dentsply
        
        
-### Contrôle de l'étiquette d'une carte à PCB :
+### Controle de marques sur PCB
 Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte à PCB.
 - Introduit :
     - Utilisation des blocs OCR et ajouts de nouveaux caractères
@@ -200,7 +213,7 @@ Lire et contrôler l'exactitude de tous les champs de l'étiquette de la carte �
 - Matériel :
 
 
-### Détection de défaut sur les cartes à PCB
+### Controle des defauts sur PCB
 Détection des défauts présents sur une carte à PCB : éléments manquants/fissures/déformation.
 - Introduit :
     - utilisation des différents blocs/image enhance pour la détection de défauts
@@ -224,7 +237,7 @@ Détection des défauts présents sur une carte à PCB : éléments manquants/fi
     - Images de plus grandes résolutions générées avec Photoshop
         
 
-### Labo-Test - Détection de marques rouges/bleues :
+### Labo-Test - Controle de marques rouges et bleues
 Détection de la présence de marques rouges aux quatres coins des plaques à PCB.
 - Pré-requis :
     - Introduction
@@ -250,7 +263,7 @@ Détection de la présence de marques rouges aux quatres coins des plaques à PC
 - Matériel :
     
     
-## TODO :
+## Todo
 - trouver où intégrer les notions
     - image enhance
     - investiguer 
