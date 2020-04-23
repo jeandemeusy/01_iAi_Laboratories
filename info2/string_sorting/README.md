@@ -1,4 +1,4 @@
-# Labo01 "Tri de texte intelligent"
+# Labo "Tri de texte intelligent"
 
 ## Objectifs
 Les principaux buts de ce travail de laboratoire sont de :
@@ -29,9 +29,9 @@ Le programme doit fonctionner peu importe le nombre de chaine à trier, et la ta
 
 Plusieurs options peuvent être passées au programme :
 - `-h` ou `--help` affichent l'aide,
-- `-c` ou `--count` affiche le nombre de chaines de caractères saisie,
-- `-a` ou `--alpha` tri les chaines saisie selon l'ordre alphabétique,
-- `-n` ou `--num` tri les chaines saisie selon l'ordre numérique.
+- `-c` ou `--count` affichebt le nombre de chaines de caractères saisie,
+- `-a` ou `--alpha` trient les chaines saisie selon l'ordre alphabétique,
+- `-n` ou `--num` trient les chaines saisie selon l'ordre numérique.
 
 L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
