@@ -27,9 +27,9 @@ Il y a deux tris à implementer:
 
 Le programme doit fonctionner peu importe le nombre de chaine à trier, et la taille maximale d'une chaîne (`\0` inclus) est de 128 caractères.
 
-Plusieurs options peuvent être passées au programme :
+Plusieurs couples d'options (courte et longue) peuvent être passés au programme :
 - `-h` ou `--help` affichent l'aide,
-- `-c` ou `--count` affichebt le nombre de chaines de caractères saisie,
+- `-c` ou `--count` affichent le nombre de chaines de caractères saisie,
 - `-a` ou `--alpha` trient les chaines saisie selon l'ordre alphabétique,
 - `-n` ou `--num` trient les chaines saisie selon l'ordre numérique.
 
@@ -100,7 +100,6 @@ int sort_names(const uint32_t num_names, char* names[], action_type action);
 |7| option --count suivie d'au moins 1 chaine | nombre de chaînes |
 
 ## Test du programme
-
 Insérez, sous la forme d'un commentaire à la fin de votre code source, la copie des tests que vous avez effectués (copier-coller des informations visibles dans le terminal).
 
 Pour afficher le code retour, utilisez la commande suivante dans le terminal `echo $?`
