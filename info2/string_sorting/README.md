@@ -21,11 +21,9 @@ La durée encadrée de ce labo est de 4 x 45 minutes.
 
 Vous devez programmer un logiciel en C permettant de trier des chaînes de caractères passées en arguments au programme. L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
-Il y a deux tri à implementer:
- - alphabétique : les chaines sont triées d'après les caractères ASCII.
- - numérique : les chaines sont triées en considérant les nombres présents dans les chaines comme tel, puis les tris par ordre croissant.
-
-
+Il y a deux tris à implementer:
+ - alphabétique : les chaines sont triées d'après les caractères ASCII (avec les options `-a` ou `--alpha`).
+ - numérique : les chaines sont triées par ordre croissants des nombres dans les chaines (avec les options `-n` ou `--num`).
 
 Le programme doit fonctionner peu importe le nombre de chaine à trier.
 	
