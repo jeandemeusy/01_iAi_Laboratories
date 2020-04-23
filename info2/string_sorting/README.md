@@ -1,14 +1,14 @@
 # Labo01 "Tri de texte intelligent"
 
-## **Objectifs**
+## Objectifs
 Les principaux buts de ce travail de laboratoire sont de :
 - utiliser les chaînes de caractères et les tableaux,
 - tester votre code.
 
-## **Durée**
+## Durée
 La durée encadrée de ce labo est de 4 x 45 minutes.
 
-## **Qualité du code C**
+## Qualité du code C
 -  un commentaire au début du fichier source devra mentionner le nom du labo, votre nom et prénom,
 -  un commentaire à la fin du fichier source devra exposer les tests que vous avez réalisés,
 -  si nécessaire, quelques commentaires pourront être placés dans le code source afin d'aider le lecteur à comprendre,
@@ -17,7 +17,7 @@ La durée encadrée de ce labo est de 4 x 45 minutes.
 -  respectez les noms imposés pour les fonctions,
 -  lors de toute saisie de valeur numérique, vous devez prendre les précautions d'usage pour un fonctionnement correct, même si l'utilisateur saisit un donnée inadaptée.
 
-## **Cahier des charges**
+## Cahier des charges
 
 Vous devez programmer un logiciel en C permettant de trier des chaînes de caractères passées en arguments au programme. L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
@@ -32,27 +32,22 @@ Le programme doit fonctionner peu importe le nombre de chaine à trier.
 La taille maximale d'une chaîne (`\0` inclus) est de 128 caractères.
 
 ```bash
-> ./app --alpha chaine12 chaine2 chaine1                                           
-chaine1, chaine12, chaine2.
+> ./app --alpha Track99 Track100 Track101                                        
+Track100, Track101, Track99.
 ```
 
 ```bash
-> ./app --num chaine12 chaine2 chaine1                                           
-chaine1, chaine2, chaine12.
+> ./app --num Track99 Track100 Track101                                         
+Track99, Track100, Track101.
 ```
 
 ```bash
-> ./app --num chaine12 chaine2 chaine1 chaine_longue                                       
-chaine1, chaine2, chaine12, chaine_longue.
+> ./app --num Track_2_99 Track_2_100 Track_2_101                                      
+Track_2_99, Track_2_100, Track_2_101.
 ```
 
 ```bash
-> ./app --num chaine1temp1 chaine1temp2 chaine1temp12                                   
-chaine1temp1, chaine1temp2, chaine1temp12.
-```
-
-```bash
-> ./app --count chaine12 chaine2 chaine1
+> ./app --count Track99 Track100 Track101
 count: 3
 ```
 
@@ -69,7 +64,7 @@ Option  Long option             Effect
 
 <div style="page-break-after: always;"></div>
 
-## **Prototypes des fonctions imposées**
+## Prototypes des fonctions imposées
 
 Pour l'affichage du "comment" utiliser le programme, option `--help` :
 ```C
@@ -91,7 +86,7 @@ Pour l'affichage de l'aide
 int usage(char* app_name);
 ```
 
-## **Code retour du programme**
+## Code retour du programme
 
 | N° | cas | code retour |
 |---|---|---|
@@ -110,7 +105,7 @@ Insérez, sous la forme d'un commentaire à la fin de votre code source, la copi
 Pour afficher le code retour, utilisez la commande suivante dans le terminal `echo $?`
 
 ```bash
-> ./app --count chaine12 chaine2 chaine1                               
+> ./app --count Track99 Track100 Track101                           
 count: 3
 
 > echo $?
