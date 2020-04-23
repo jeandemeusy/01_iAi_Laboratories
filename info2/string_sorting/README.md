@@ -61,10 +61,10 @@ count: 3
 Usage: ./app [option] [strings]...
 
 Option  Long option             Effect
--h      --help                  Display this.
--a      --alpha                 ...
--n      --numeric               ...
--c      --count                 ...
+-h      --help                  Displays this.
+-a      --alpha                 Sorts according to ASCII table.
+-n      --numeric               Sorts according to numbers in strings
+-c      --count                 Displays number of strings.
 ```
 
 <div style="page-break-after: always;"></div>
