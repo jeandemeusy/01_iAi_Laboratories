@@ -19,15 +19,21 @@ La durée encadrée de ce labo est de 4 x 45 minutes.
 
 ## Cahier des charges
 
-Vous devez programmer un logiciel en C permettant de trier des chaînes de caractères passées en arguments au programme. L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
+Vous devez programmer un logiciel en C permettant de trier des chaînes de caractères passées en arguments au programme.
 
 Il y a deux tris à implementer:
- - alphabétique : les chaines sont triées d'après les caractères ASCII (avec les options `-a` ou `--alpha`).
- - numérique : les chaines sont triées par ordre croissants des nombres dans les chaines (avec les options `-n` ou `--num`).
+ - alphabétique : les chaines sont triées d'après les caractères ASCII,
+ - numérique : les chaines sont triées par ordre croissants des nombres dans les chaines.
 
-Le programme doit fonctionner peu importe le nombre de chaine à trier.
-	
-La taille maximale d'une chaîne (`\0` inclus) est de 128 caractères.
+Le programme doit fonctionner peu importe le nombre de chaine à trier, et la taille maximale d'une chaîne (`\0` inclus) est de 128 caractères.
+
+Plusieurs options peuvent être passées au programme :
+- `-h` ou `--help` affichent l'aide,
+- `-c` ou `--count` affiche le nombre de chaines de caractères saisie,
+- `-a` ou `--alpha` tri les chaines saisie selon l'ordre alphabétique,
+- `-n` ou `--num` tri les chaines saisie selon l'ordre numérique.
+
+L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
 ```bash
 > ./app --alpha Track99 Track100 Track101                                        
