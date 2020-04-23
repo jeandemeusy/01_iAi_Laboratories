@@ -79,10 +79,7 @@ Pour les tris des `num_names` noms contenus dans le tableau `names` :
 int sort_names(const uint32_t num_names, char* names[], action_type action);
 ```
 
-Pour l'affichage de l'aide 
-```C
-int usage(char* app_name);
-```
+`action_type` est un type énuméré indiquant l'option saisie par l'utilisateur.
 
 ## Code retour du programme
 
