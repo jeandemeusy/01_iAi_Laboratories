@@ -36,17 +36,17 @@ Plusieurs couples d'options (courte et longue) peuvent être passés au programm
 L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
 ```bash
-> ./app --alpha Track99 Track100 Track101                                        
+> ./app --alpha Track99 Track100 Track101
 Track100, Track101, Track99.
 ```
 
 ```bash
-> ./app --natural Track99 Track100 Track101                                         
+> ./app --natural Track99 Track100 Track101
 Track99, Track100, Track101.
 ```
 
 ```bash
-> ./app --natural Track_2_99 Track_2_100 Track_2_101                                      
+> ./app --natural Track_2_99 Track_2_100 Track_2_101
 Track_2_99, Track_2_100, Track_2_101.
 ```
 
