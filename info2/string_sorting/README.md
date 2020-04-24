@@ -1,4 +1,4 @@
-# Labo "Tri de texte intelligent"
+# Labo "Natural Sort"
 
 ## Objectifs
 Les principaux buts de ce travail de laboratoire sont de :
@@ -23,7 +23,7 @@ Vous devez programmer un logiciel en C permettant de trier des chaînes de carac
 
 Il y a deux tris à implementer:
  - alphabétique : les chaines sont triées d'après les caractères ASCII,
- - numérique : les chaines sont triées par ordre croissants des nombres dans les chaines.
+ - naturel : les chaines sont triées par ordre alphabétiques, sauf que les nombres dans les chaines sont traitées comme un seul caractère.
 
 Le programme doit fonctionner peu importe le nombre de chaine à trier, et la taille maximale d'une chaîne (`\0` inclus) est de 128 caractères.
 
@@ -31,7 +31,7 @@ Plusieurs couples d'options (courte et longue) peuvent être passés au programm
 - `-h` ou `--help` affichent l'aide,
 - `-c` ou `--count` affichent le nombre de chaines de caractères saisie,
 - `-a` ou `--alpha` trient les chaines saisie selon l'ordre alphabétique,
-- `-n` ou `--num` trient les chaines saisie selon l'ordre numérique.
+- `-n` ou `--natural` trient les chaines saisie selon l'ordre naturel.
 
 L'affichage des chaînes triées sera réalisé **exactement** comme indiqué ci-dessous.
 
@@ -41,12 +41,12 @@ Track100, Track101, Track99.
 ```
 
 ```bash
-> ./app --num Track99 Track100 Track101                                         
+> ./app --natural Track99 Track100 Track101                                         
 Track99, Track100, Track101.
 ```
 
 ```bash
-> ./app --num Track_2_99 Track_2_100 Track_2_101                                      
+> ./app --natural Track_2_99 Track_2_100 Track_2_101                                      
 Track_2_99, Track_2_100, Track_2_101.
 ```
 
@@ -62,7 +62,7 @@ Usage: ./app [option] [strings]...
 Option  Long option             Effect
 -h      --help                  Displays this.
 -a      --alpha                 Sorts according to ASCII table.
--n      --numeric               Sorts according to numbers in strings
+-n      --natural               Sorts according to numbers in strings
 -c      --count                 Displays number of strings.
 ```
 
@@ -94,9 +94,9 @@ int sort_names(const uint32_t num_names, char* names[], action_type action);
 |1| option --help | 0 |
 |2| aucune option | 254 |
 |3| option --alpha suivie d'aucune chaîne | 253 |
-|4| option --num suivie d'aucune chaîne | 253 |
+|4| option --natural suivie d'aucune chaîne | 253 |
 |5| option --alpha suivie d'au moins 1 chaine | 0 |
-|6| option --num suivie d'au moins 1 chaine | 0 |
+|6| option --natural suivie d'au moins 1 chaine | 0 |
 |7| option --count suivie d'au moins 1 chaine | nombre de chaînes |
 
 ## Test du programme
