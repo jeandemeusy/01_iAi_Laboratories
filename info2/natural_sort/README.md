@@ -59,11 +59,11 @@ count: 3
 > ./app --help
 Usage: ./app [option] [strings]...
 
-Option  Long option             Effect
--h      --help                  Displays this.
--a      --alpha                 Sorts according to ASCII table.
--n      --natural               Sorts according to numbers in strings
--c      --count                 Displays number of strings.
+Option  Long option     Effect
+-h      --help          Displays this.
+-a      --alpha         Sorts according to ASCII table.
+-n      --natural       Sorts according to numbers in strings
+-c      --count         Displays number of strings.
 ```
 
 <div style="page-break-after: always;"></div>
