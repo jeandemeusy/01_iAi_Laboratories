@@ -10,7 +10,6 @@ int main(int argc, char* argv[]) {
 		strcpy(input_str[k-2], argv[k]);
 	}
 	
-
 	switch(opt.action) {
 		case HELP:
 			return_code = usage(argv[0]);
