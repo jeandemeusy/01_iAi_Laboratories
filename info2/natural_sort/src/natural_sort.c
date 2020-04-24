@@ -9,6 +9,7 @@ int main(int argc, char* argv[]) {
 		input_str[k-2] = (char*)malloc(NAME_MAX_SIZE * sizeof(char));
 		strcpy(input_str[k-2], argv[k]);
 	}
+	
 
 	switch(opt.action) {
 		case HELP:
