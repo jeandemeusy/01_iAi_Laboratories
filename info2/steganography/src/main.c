@@ -109,7 +109,6 @@ int main(int argc, char *argv[])
     if (!bmp)
         return 1;
 
-
     if (opt.encode) {
         encode(bmp, fslurp(stdin));
         if (opt.output_filename)
