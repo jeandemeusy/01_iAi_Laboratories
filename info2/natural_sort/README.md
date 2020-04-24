@@ -1,4 +1,4 @@
-# Labo "Natural Sort"
+# Natural Sort
 
 ## Objectifs
 Les principaux buts de ce travail de laboratoire sont de :
