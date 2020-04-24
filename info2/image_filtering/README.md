@@ -1,1 +1,1 @@
-# Labo "Image Filtering"
+# Image Filtering
