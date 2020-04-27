@@ -1,7 +1,7 @@
 #include "natural_sort.h"
 
 int main(int argc, char* argv[]) {
-    option_type opt = read_arguments(argc, argv);
+    action_type action = read_arguments(argc, argv);
 	int return_code = 0;
 
 	char **input_str = (char**)malloc((argc-2) * sizeof(char*));
@@ -10,13 +10,13 @@ int main(int argc, char* argv[]) {
 		strcpy(input_str[k-2], argv[k]);
 	}
 		
-	switch(opt.action) {
+	switch(action) {
 		case HELP:
 			return_code = usage(argv[0]);
 			break;
 		case ALPHA:
 		case NATURAL:
-			return_code = sort_names(argc-2, input_str, opt.action);
+			return_code = sort_names(argc-2, input_str, action);
 			print_names(argc-2, input_str);
 			break;
 		case COUNT:

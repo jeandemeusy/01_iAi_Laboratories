@@ -1,7 +1,7 @@
 #include "argument.h"
 
-option_type read_arguments(int argc, char *argv[]) {
-    option_type options = {0};
+action_type read_arguments(int argc, char *argv[]) {
+    action_type action;
 	struct option long_opt[] = {{"alpha", no_argument, 0, 'a'},
 								{"natural", no_argument, 0, 'n'},
 								{"help", no_argument, 0, 'h'},
@@ -10,16 +10,16 @@ option_type read_arguments(int argc, char *argv[]) {
 
 	switch (getopt_long(argc, argv, "anhc", long_opt, NULL)) {    
 		case 'a':
-			options.action = ALPHA;
+			action = ALPHA;
 			break;
 		case 'n':
-			options.action = NATURAL;
+			action = NATURAL;
 			break;
 		case 'h':
-			options.action = HELP;
+			action = HELP;
 			break;
 		case 'c':
-			options.action = COUNT;
+			action = COUNT;
 			break;
 		case -1:
 			break;
@@ -27,7 +27,7 @@ option_type read_arguments(int argc, char *argv[]) {
 			exit(EXIT_FAILURE);
 	}
 
-    return options;
+    return action;
 }
 
 int usage(char* app_name) {
