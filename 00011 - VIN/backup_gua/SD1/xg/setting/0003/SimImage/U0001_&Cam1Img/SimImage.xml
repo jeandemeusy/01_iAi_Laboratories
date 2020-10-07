@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimulationImageXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <imgFileInfo>
+    <SimImgInfo Order="0">
+      <Name>test_blobs.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="1">
+      <Name>test_blobs_2.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="2">
+      <Name>test_blobs_3.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="3">
+      <Name>test_whiteBalance_1.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="4">
+      <Name>test_whiteBalance_2.bmp</Name>
+    </SimImgInfo>
+    <SimImgInfo Order="5">
+      <Name>test_whiteBalance_3.bmp</Name>
+    </SimImgInfo>
+  </imgFileInfo>
+</SimulationImageXml>
