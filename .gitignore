@@ -4,6 +4,9 @@
 **/obj/
 !*.*
 
+**/.devcontainer/
+**/.vscode/
+
 # Compiled source
 *.com
 *.class

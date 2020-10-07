@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SimulationFolderSettingXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <imgFolderInfo>
-    <SimImgFolderInfo UnitId="U0001" ImgVar="&amp;Cam1Img" CamId="0" IIdx="-1" MIdx="0">
-      <FolderPath>SimImage\U0001_&amp;Cam1Img</FolderPath>
-    </SimImgFolderInfo>
-  </imgFolderInfo>
-</SimulationFolderSettingXml>
