@@ -1,0 +1,637 @@
+{
+    "exec": "./app",
+    "test": [
+        {
+            "comment": "standard test case 1",
+            "args": [
+                120,
+                100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [
+                "| TOTAL HT |  30.80 |",
+                "| TVA |   2.46 |",
+                "| TOTAL TTC |  33.26 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU CI test case 1",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CI (cm2)|100|0.12|12.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU CI test case 2",
+            "args": [
+                100,
+                199,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CI (cm2)|199|0.12|23.88 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU CI test case 3",
+            "args": [
+                200,
+                100,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CI (cm2)|200|0.10|20.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Diodes test case 1",
+            "args": [
+                100,
+                100,
+                1,
+                1,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| DIODE|1|0.75|0.75 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Diodes test case 2",
+            "args": [
+                100,
+                100,
+                1,
+                9,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| DIODE|9|0.75|6.75 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Diodes test case 3",
+            "args": [
+                100,
+                100,
+                1,
+                10,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| DIODE|10|0.70|7.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Diodes test case 4",
+            "args": [
+                100,
+                100,
+                1,
+                19,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| DIODE           |     19   |  0.70 |  13.30 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Diodes test case 5",
+            "args": [
+                100,
+                100,
+                1,
+                20,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| DIODE           |     20   |  0.60 |  12.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Condensateurs test case 1",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                1,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CONDENSATEUR|1|1.00|1.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Condensateurs test case 2",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                9,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CONDENSATEUR|9|1.00|9.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Condensateurs test case 3",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                10,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| CONDENSATEUR|10|0.80|8.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 1",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      0   |  1.00 |   0.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 2",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                1
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      1   |  1.00 |   1.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 3",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                9
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      1   |  1.00 |   1.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 4",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                10
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      1   |  1.00 |   1.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 5",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                11
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      2   |  1.00 |   2.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Resistances test case 6",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                1234
+            ],
+            "stdin": [],
+            "stdout": [
+                "| RESISTANCE(x10) |      124   |  1.00 | 124.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Vernis test case 1",
+            "args": [
+                100,
+                100,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| VERNIS          |    200   |  0.01 |   2.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "PU Vernis test case 2",
+            "args": [
+                100,
+                100,
+                4,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| VERNIS          |    200   |  0.01 |   2.00 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "num arg test case 1",
+            "args": [
+                100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 1
+        },
+        {
+            "comment": "num arg test case 2",
+            "args": [
+                100,
+                100,
+                100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 2
+        },
+        {
+            "comment": "bad arg test case 1",
+            "args": [
+                0,
+                100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 2",
+            "args": [
+                -120,
+                100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 3",
+            "args": [
+                120,
+                0,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 4",
+            "args": [
+                120,
+                -100,
+                1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 5",
+            "args": [
+                120,
+                100,
+                0,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 6",
+            "args": [
+                120,
+                100,
+                -1,
+                4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 7",
+            "args": [
+                120,
+                100,
+                1,
+                0,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 0
+        },
+        {
+            "comment": "bad arg test case 8",
+            "args": [
+                120,
+                100,
+                1,
+                -4,
+                3,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 9",
+            "args": [
+                120,
+                100,
+                1,
+                4,
+                0,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 0
+        },
+        {
+            "comment": "bad arg test case 10",
+            "args": [
+                120,
+                100,
+                1,
+                4,
+                -10,
+                12
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 11",
+            "args": [
+                120,
+                100,
+                1,
+                4,
+                5,
+                0
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 0
+        },
+        {
+            "comment": "bad arg test case 12",
+            "args": [
+                120,
+                100,
+                1,
+                4,
+                5,
+                -10
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 13",
+            "args": [
+                "not a number",
+                100,
+                1,
+                4,
+                5,
+                10
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 14",
+            "args": [
+                100,
+                "not a number",
+                1,
+                4,
+                5,
+                10
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "bad arg test case 15",
+            "args": [
+                100,
+                100,
+                "not a number",
+                4,
+                5,
+                10
+            ],
+            "stdin": [],
+            "stdout": [],
+            "returnCode": 4
+        },
+        {
+            "comment": "own test case 1",
+            "args": [
+                150,
+                80,
+                2,
+                10,
+                8,
+                20
+            ],
+            "stdin": [],
+            "stdout": [
+                "| TOTAL HT  | 45.80 |",
+                "| TVA       |  3.66 |",
+                "| TOTAL TTC | 49.46 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "own test case 2",
+            "args": [
+                200,
+                80,
+                4,
+                15,
+                25,
+                45
+            ],
+            "stdin": [],
+            "stdout": [
+                "| TOTAL HT  | 89.90 |",
+                "| TVA       |  7.19 |",
+                "| TOTAL TTC | 97.09 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "own test case 3",
+            "args": [
+                120,
+                80,
+                1,
+                10,
+                4,
+                12
+            ],
+            "stdin": [],
+            "stdout": [
+                "| TOTAL HT  | 31.24|",
+                "| TVA       |  2.50 |",
+                "| TOTAL TTC | 33.74 |"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "own test case 4",
+            "args": [
+                10,
+                10,
+                1,
+                0,
+                0,
+                0
+            ],
+            "stdin": [],
+            "stdout": [
+                "| TOTAL HT  |  0.19 |",
+                "| TVA       |  0.02 |",
+                "| TOTAL TTC |  0.21 |"
+            ],
+            "returnCode": 0
+        }
+    ]
+}

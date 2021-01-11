@@ -3,7 +3,7 @@
 #
 
 # set the executable name
-EXEC=app
+EXEC=tabelle
 
 CC=gcc
 CFLAGS+= -std=c99 -Wall -g
@@ -21,8 +21,6 @@ all: $(EXEC)
 
 $(EXEC): $(OBJS)
 	$(CC) -o $@ $^ $(LDFLAGS) $(LDLIBS)
-	$(RM) -rf $(ODIR)
-
 
 $(ODIR)/%.o: %.c | $(ODIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MMD -MF $(@:.o=.d)
@@ -35,10 +33,11 @@ clean:
 	$(RM) -rf $(ODIR)
 	$(RM) -f unittest.py
 
-test: all
-	rm -f ~/unittest.py
-	wget -P ~  https://raw.githubusercontent.com/Info1-TIN-A-2020-2021/unittest/master/unittest.py
-	python3 ~/unittest.py -i t.json
+test: $(EXEC)
+	baygon -v ./$(EXEC)
+
+format: main.c
+	clang-format -i main.c
 
 .PHONY:	clean all test
 .DEFAULT: all

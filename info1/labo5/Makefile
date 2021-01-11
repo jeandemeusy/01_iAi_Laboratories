@@ -21,8 +21,6 @@ all: $(EXEC)
 
 $(EXEC): $(OBJS)
 	$(CC) -o $@ $^ $(LDFLAGS) $(LDLIBS)
-	$(RM) -rf $(ODIR)
-
 
 $(ODIR)/%.o: %.c | $(ODIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MMD -MF $(@:.o=.d)

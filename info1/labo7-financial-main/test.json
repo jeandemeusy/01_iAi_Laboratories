@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "name": "Standard test",
+      "args": [],
+      "stdin": "",
+      "stdout": [
+        {
+          "regex": "(?i)diam.*?67.93\\b"
+        }
+      ]
+    }
+  ]
+}

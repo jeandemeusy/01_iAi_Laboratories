@@ -3,11 +3,12 @@
     "test": [
         {
             "comment": "test #1",
-            "args": [],
-            "stdin": [
+            "args": [
+                "2",
                 "-0.3",
                 "0.1"
             ],
+            "stdin": [],
             "stdout": [
                 "Nombre de points: 100"
             ],
@@ -15,11 +16,12 @@
         },
         {
             "comment": "test #2",
-            "args": [],
-            "stdin": [
+            "args": [
+                "2",
                 "0",
                 "0.5"
             ],
+            "stdin": [],
             "stdout": [
                 "Nombre de points: 100"
             ],
@@ -27,13 +29,40 @@
         },
         {
             "comment": "test #3",
-            "args": [],
-            "stdin": [
+            "args": [
+                "2",
                 "100",
                 "   100.00   "
             ],
+            "stdin": [],
             "stdout": [
                 "Nombre de points:   0"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "test #4",
+            "args": [
+                "2",
+                "2.5",
+                "0"
+            ],
+            "stdin": [],
+            "stdout": [
+                "Nombre de points:  25"
+            ],
+            "returnCode": 0
+        },
+        {
+            "comment": "test #5",
+            "args": [
+                "2",
+                "5.5",
+                "6.5"
+            ],
+            "stdin": [],
+            "stdout": [
+                "Nombre de points:  0"
             ],
             "returnCode": 0
         }

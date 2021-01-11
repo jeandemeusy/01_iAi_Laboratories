@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "filters": {
+    "trim": true
+  },
+  "tests": [
+    {
+      "name": "Standard test #1",
+      "args": [
+        "P10/10R9",
+        0.001
+      ],
+      "stdout": [
+        {
+          "contains": "23.06"
+        },
+        {
+          "contains": "1380.4"
+        },
+        {
+          "contains": "│ Perimeter   │    0.72 m  │"
+        }
+      ]
+    },
+    {
+      "name": "Standard test #2",
+      "args": [
+        "P225/55R17",
+        12.5
+      ],
+      "stdout": [
+        {
+          "regex": "(?i)diam.*?67.93\\b"
+        },
+        {
+          "regex": "(?i)perim.*?2.13\\b"
+        },
+        {
+          "regex": "(?i)rev.*?468.6\\b"
+        },
+        {
+          "regex": "(?i)revolution.*?5857.31"
+        }
+      ]
+    },
+    {
+      "name": "Arguments Check",
+      "tests": [
+        {
+          "name": "Five is too many arguments",
+          "args": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "exit": 3
+        },
+        {
+          "name": "Eight is too many arguments",
+          "args": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "exit": 3
+        },
+        {
+          "name": "Not enough arguments",
+          "args": [],
+          "exit": 2
+        }
+      ]
+    },
+    {
+      "name": "Tire code",
+      "tests": [
+        {
+          "name": "Bad tire code \"N123-65R12\"",
+          "args": [
+            "N123-65R12"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Bad tire code \"P0/65R12\"",
+          "args": [
+            "P0/65R12"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Bad tire code \"P225/0R12\"",
+          "args": [
+            "P225/0R12"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Bad tire code \"P225/101R12\"",
+          "args": [
+            "P225/101R12"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Bad tire code \"P225/-1R12\"",
+          "args": [
+            "P225/-1R12"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Bad tire code \"P225/55R0\"",
+          "args": [
+            "P225/55R0"
+          ],
+          "exit": 1
+        },
+        {
+          "name": "Good tire code \"P225/55R15\"",
+          "args": [
+            "P225/55R15"
+          ],
+          "stdout": [
+            {
+              "regex": "(?i)diam.*?62.85\\b"
+            },
+            {
+              "regex": "(?i)perim.*?1.97\\b"
+            },
+            {
+              "regex": "(?i)rev.*?506.5\\b"
+            }
+          ],
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "name": "Distance",
+      "tests": [
+        {
+          "name": "Bad distance -10",
+          "args": [
+            "P225/55R17",
+            -10
+          ],
+          "exit": 4
+        },
+        {
+          "name": "Bad distance \"foobar\"",
+          "args": [
+            "P225/55R17",
+            "foobar"
+          ],
+          "exit": 4
+        },
+        {
+          "name": "Good distance 10",
+          "args": [
+            "P225/55R17",
+            10
+          ],
+          "exit": 0
+        },
+        {
+          "name": "Good distance 3.14",
+          "args": [
+            "P225/55R17",
+            3.14
+          ],
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "name": "Table",
+      "tests": [
+        {
+          "name": "Unit for diameter is centimeters",
+          "args": [
+            "P225/55R17",
+            10
+          ],
+          "stdout": [
+            {
+              "regex": "\\d+(\\.\\d+?)\\s*cm\\b"
+            }
+          ]
+        },
+        {
+          "name": "Unit for perimeter is meters",
+          "args": [
+            "P225/55R17",
+            10
+          ],
+          "stdout": [
+            {
+              "regex": "\\d+(\\.\\d+?)\\s*m\\b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

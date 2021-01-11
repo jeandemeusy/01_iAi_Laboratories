@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "name" : "Arguments",
+      "tests": [
+        {
+          "name": "Test ok",
+          "args": ["lower", "FOO"],
+          "stdout": [{"regex": "foo\\b"}],
+          "exit": 0
+        },
+        {
+          "name": "Missing arg",
+          "args": ["lower"],
+          "exit": 2
+        }
+      ]
+    },
+    {
+      "name" : "Lower",
+      "tests": [
+        {
+          "name": "Test good",
+          "args": ["lower", "FOO"],
+          "stdout": [{"regex": "foo\\b"}],
+          "exit": 0
+        },
+        {
+          "name": "Test space",
+          "args": ["lower", "FOO bar"],
+          "stdout": [{"regex": "foo bar\\b"}]
+        }
+      ]
+    },
+    {
+      "name" : "Count",
+      "tests": [
+        {
+          "name": "Test count",
+          "args": ["count", "Bonjour les amis !"],
+          "stdout": [{"regex": "3\\b"}]
+        }
+      ]
+    }
+  ]
+}
